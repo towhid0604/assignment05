@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 05</title>
+    <!-- Tailwindcss -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JSS -->
+    <script src="./JS/index.js" defer></script>
+    <!-- FONT AWSOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="sticky top-0 bg-white z-10">
+      <div class="nav">
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
+        >
+          <button
+            onclick="window.location.href='index.html'"
+            class="bg-lime-400 text-black px-4 py-2 rounded-md hover:bg-lime-500"
+            aria-label="Go to Blog"
+          >
+            Home
+          </button>
+          <div class="flex items-center space-x-2">
+            <img src="./assets/logo.png" alt="Donate Icon" class="w-6 h-6" />
+            <span class="font-bold text-gray-800">Donate Bangladesh</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <img src="./assets/coin.png" alt="Currency" class="w-6 h-6" />
+            <span class="font-bold text-gray-800" id="totalDonation"
+              >5500 BDT</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="mt-4 mb-7 flex">
+        <div><h1 class="font-bold text-4xl">Important FAQ</h1></div>
+        <div><img src="./assets/help.png" alt="" class="size-6 ml-3"/></div>
+      </div>
+
+      <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What is the DOM?</div>
+          <div class="collapse-content">
+            <p>
+              The DOM is a programming interface that represents a document's
+              structure as a tree of objects, allowing dynamic access and
+              manipulation of HTML and XML documents.
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How can you access DOM elements?
+          </div>
+          <div class="collapse-content">
+            <p>
+              You can access DOM elements using methods like getElementById(),
+              getElementsByClassName(), or querySelector().
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            What does the createElement method do?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The createElement method creates a new HTML element (node) in the
+              DOM that can be added to the document.
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How can you modify the content of a DOM element?
+          </div>
+          <div class="collapse-content">
+            <p>
+              You can modify the content using the innerHTML, textContent, or
+              setAttribute() properties.
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            What is event handling in the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Event handling allows you to execute code in response to user
+              interactions (like clicks or key presses) using methods like
+              addEventListener().
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </main>
+  </body>
+</html>

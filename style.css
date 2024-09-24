@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  background: rgb(249, 247, 243);
+  width: 100%;
+}
+.active {
+  background-color: #a3e635; /* Active button background */
+  border: none;
+}
+.inactive {
+  background-color: white;
+  border: 1px solid #d1d5db;
+}
+.tab-btn {
+  transition: background-color 0.3s;
+}
+.tab-btn:hover:not(.active) {
+  background-color: #f3f4f6;
+}
